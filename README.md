@@ -12,5 +12,6 @@ There will be two files in this example: index.php and get_zoom_list.php
 
 <h2>What you need to have to use this source code: </h2>
 
-1- TelecomsXChange Buyer Account ( Sign up for one here: www.telecomsxchange.com/voice_api /
+1- TelecomsXChange Buyer Account ( Sign up for one here: www.telecomsxchange.com/voice_api 
+
 2- API Key (Generated from inside the portal after you signup)
