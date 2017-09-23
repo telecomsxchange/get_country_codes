@@ -1,4 +1,4 @@
-# get_country_codes
+# Get Country Codes, Names via TelecomsXChange API
 
 This TelecomsXChange API allows you to get an updated complete list of all country codes + area codes + country name and network operator name via a single API call from TelecomsXChange backend.
 
