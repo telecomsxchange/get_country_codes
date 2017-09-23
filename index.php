@@ -66,6 +66,8 @@ if($searchform) {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
+       <!-- Getting JQUERY for autocomplete to work in the search box -->
+          
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -110,6 +112,8 @@ $().ready(function() {
         </div>
 
         <?php
+          
+          // This code will utilize the Lookup API to get the High/Low market rates from TelecomsXChange backend api
                 if($searchform)
 
                         if(count($rates)) {
@@ -135,11 +139,15 @@ $().ready(function() {
                                         }
                                 }
 
+                          // Show results if rates were found
+                          
                                 echo "<div class='alert alert-success' role='alert'>Highest Price: $max_price_n [$max_interval_1.$max_interval_n]    |    Lowest Price: $min_price_n [$min_interval_1.$min_interval_n]</div>";
 
 
 
                         } else {
+                          
+                          // When no results found show some error
                                 echo "<div class='alert alert-danger' role='alert'>No results found</div>";
                         }
         ?>
